@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { FaUserCircle } from 'react-icons/fa';
 import '../styles/Navbar.css';
-import SplineBackground from './SplineBackground';
+
 
 function Navbar() {
   const [accountDropdown, setAccountDropdown] = useState(false);
