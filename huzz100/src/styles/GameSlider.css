@@ -1,0 +1,66 @@
+.steam-slider-wrapper {
+  background-color: transparent;
+  padding: 40px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.slider-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #f0ae08;
+}
+
+.steam-slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 40s linear infinite;
+}
+
+.game-card {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 250px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-card:hover {
+  transform: scale(1.06);
+}
+
+.game-card p {
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  font-size: 16px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.33%); /* since tripled */
+  }
+}
